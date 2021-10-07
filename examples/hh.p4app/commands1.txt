@@ -1,0 +1,11 @@
+table_set_default set_heavy_hitter_count_table set_heavy_hitter_count
+table_set_default find_min1 do_find_min1
+table_set_default find_min2 do_find_min2
+table_set_default find_min3 do_find_min3
+table_set_default find_min4 do_find_min4
+table_set_default read_hh do_read_hh
+table_set_default update_hh do_update_hh
+table_add ipv4_lpm ipv4_forward 10.0.1.1/32 => 00:00:00:00:01:01 1
+table_add ipv4_lpm ipv4_forward 10.0.2.2/32 => 00:00:00:00:02:02 2
+table_add ipv4_lpm ipv4_forward 10.0.3.3/32 => 00:00:00:00:03:03 3
+
