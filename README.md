@@ -6,14 +6,17 @@ The sketch structures (count-min sketch, bloom filters) provide memory-efficient
 
 This implementation should be used togather with DDoS detection solution.
 
-When the network controller is notified of the DDoS attack target at a specific destination IP address, the controller can activate one or more DDoS monitoring algorithms which provide more detailed DDoS traffic statistics:
-•	The total traffic (packets and bytes) towards the DDoS target.
-•	The most frequent source IP subnets (i.e. with an IPv4 /16 prefix) originating the attack.
-•	The most frequent source TCP/UDP ports - specific port numbers can suggest the use of DDoS amplification techniques based on vulnerable public network services (e.g., DNS, NTP, SNMP).
-•	The most frequent destination TCP/UDP ports which tell what service is under attack (e.g., a web portal).
-•	The IP protocols used (whether it is a UDP- or TCP-based DDoS attack).
-•	The most frequent packet lengths (amplification attacks tend to use big packets).
+![INT workflow](docs/ddos_detection_and_monitoring.png)
 
+When the network controller is notified of the DDoS attack target at a specific destination IP address, the controller can activate one or more DDoS monitoring algorithms which provide more detailed DDoS traffic statistics:
+â€¢	The total traffic (packets and bytes) towards the DDoS target.
+â€¢	The most frequent source IP subnets (i.e. with an IPv4 /16 prefix) originating the attack.
+â€¢	The most frequent source TCP/UDP ports - specific port numbers can suggest the use of DDoS amplification techniques based on vulnerable public network services (e.g., DNS, NTP, SNMP).
+â€¢	The most frequent destination TCP/UDP ports which tell what service is under attack (e.g., a web portal).
+â€¢	The IP protocols used (whether it is a UDP- or TCP-based DDoS attack).
+â€¢	The most frequent packet lengths (amplification attacks tend to use big packets).
+
+![INT workflow](docs/DDoS_monitoring.png)
 
 The DDoS monitoring implementation and testing was done within the GEANT Data Plane Programmibilty activity:
 
