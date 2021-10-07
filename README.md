@@ -46,7 +46,7 @@ For more information about p4app please visit: https://github.com/p4lang/p4app
 
 
 Usage
------'
+-------
 
 p4app runs p4app packages. p4app packages are just directories with a `.p4app`
 extension - for example, if you wrote a router in P4, you might place it in
